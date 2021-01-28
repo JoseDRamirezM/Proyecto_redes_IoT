@@ -1,0 +1,23 @@
+{% extends "invernadero/layout.html" %}
+
+{% block title %}
+    Invernadero
+{% endblock %}
+
+{% block body %}
+    <h1>Lecturas de sensores</h1>
+    <table>
+        <tr>
+            <td>Temperatura</td>
+            <td>{{datos.0}}</td>
+        </tr>
+        <tr>
+            <td>Humedad</td>
+            <td>{{datos.1}}</td>
+        </tr>
+        <tr>
+            <td>Intensidad de luz</td>
+            <td>{{datos.2}}</td>
+        </tr>
+    </table>
+{% endblock %}
