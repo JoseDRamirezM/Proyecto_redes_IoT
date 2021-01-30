@@ -1,0 +1,38 @@
+{% extends "invernadero/layout.html" %}
+
+{% block title %}
+    Datos Historicos Invernadero
+{% endblock %}
+
+{% block message %}
+    <div>
+        <h2>Datos historicos</h2>
+        <p style="text-align: center;">{{fecha}}</p>
+        <a href="{% url 'invernadero:index'%}">Volver al monitor</a>
+    </div>
+
+ 
+{% endblock %}
+
+{% block body %}
+        <table data-vertable="ver6">
+            <thead>
+                <tr class="row100 head">
+                    <th class="column100 column2" data-column="column2">Fecha</th>
+                    <th class="column100 column2" data-column="column2">Temperatura (°C)</th>
+                    <th class="column100 column3" data-column="column3">Humedad (%)</th>
+                    <th class="column100 column4" data-column="column4">Intensidad de luz natural</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dato in datos %}
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">{{dato.datetime}}</td>
+                    <td class="column100 column2" data-column="column2">{{dato.temperatura}}</td>
+                    <td class="column100 column3" data-column="column3">{{dato.humedad}}</td>
+                    <td class="column100 column3" data-column="column3">{{dato.intensidad_luz}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

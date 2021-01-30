@@ -1,23 +1,41 @@
 {% extends "invernadero/layout.html" %}
 
+
+{% block update %}
+    <meta http-equiv='refresh' content='0.5'>
+{% endblock %}
+
 {% block title %}
     Invernadero
 {% endblock %}
 
+{% block message %}
+    <div>
+        <h2>Monitor de invernadero</h2>
+        <p style="text-align: center;">{{fecha}}</p>
+    </div>
+
+    <div>
+        <a href="{% url 'invernadero:historico'%}">Ver datos historicos</a>
+    </div>
+ 
+{% endblock %}
+
 {% block body %}
-    <h1>Lecturas de sensores</h1>
-    <table>
-        <tr>
-            <td>Temperatura</td>
-            <td>{{datos.0}}</td>
-        </tr>
-        <tr>
-            <td>Humedad</td>
-            <td>{{datos.1}}</td>
-        </tr>
-        <tr>
-            <td>Intensidad de luz</td>
-            <td>{{datos.2}}</td>
-        </tr>
-    </table>
+        <table data-vertable="ver6">
+            <thead>
+                <tr class="row100 head">
+                    <th class="column100 column2" data-column="column2">Temperatura (°C)</th>
+                    <th class="column100 column3" data-column="column3">Humedad (%)</th>
+                    <th class="column100 column4" data-column="column4">Intensidad de luz natural</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">{{datos.0}}</td>
+                    <td class="column100 column2" data-column="column2">{{datos.1}}</td>
+                    <td class="column100 column3" data-column="column3">{{datos.2}}</td>
+                </tr>
+            </tbody>
+        </table>
 {% endblock %}
