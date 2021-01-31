@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from urllib.parse import quote_plus
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -74,12 +75,45 @@ WSGI_APPLICATION = 'monitor.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# DATABASES = {
+        
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'monitor',
+#         'CLIENT': {
+#             'host': "mongodb+srv://Invernadero:" + quote_plus('31-01-2021') + "@cluster0.o7gua.mongodb.net/monitor?retryWrites=true&w=majority"
+#         },   
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'monitor',
+        'HOST': 'mongodb+srv://Invernadero:31-01-2021@cluster0.o7gua.mongodb.net/monitor?retryWrites=true&w=majority',
+        'USER': 'Invernadero',
+        'PASSWORD': '31-01-2021',
     }
 }
+
+# DATABASE = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         "CLIENT": {
+#            "name": 'monitor',
+#            "host": 'mongodb+srv://Invernadero:31-01-2021@cluster0.o7gua.mongodb.net/monitor?retryWrites=true&w=majority',
+#            "username": 'Invernadero',
+#            "password": '31-01-2021',
+#            "authMechanism": "SCRAM-SHA-1",
+#         }, 
+#     }
+# }
 
 
 # Password validation
