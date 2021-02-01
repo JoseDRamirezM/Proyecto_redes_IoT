@@ -5,8 +5,8 @@ Bogotá, Colombia
 
 # Interfaces de usuario  
 Página principal  
-![alt text](https://ibb.co/vz0cWMT "UI 1")  
+<img src="https://ibb.co/vz0cWMT" align="left" width="192px" height="192px"/>  
   
 Página de datos historicos  
-![alt text](https://ibb.co/vz0cWMT "UI 1")  
+<img src="https://ibb.co/vz0cWMT" align="left" width="192px" height="192px"/>   
 
