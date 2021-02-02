@@ -9,6 +9,7 @@ Página principal
 
 Página de datos historicos    
 <img src="https://i.ibb.co/85PX1x3/UI-2.png" align="left"/>  
+Como los datos se leen cada segundo, podemos ver lecturas similares o iguales  
 
 # Cluster de MongoDB cloud  
 <img src="https://i.ibb.co/vsGJpXS/DB-1.png" align="left"/>  
