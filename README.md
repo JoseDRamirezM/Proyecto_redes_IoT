@@ -8,7 +8,14 @@ Página principal
 <img src="https://i.ibb.co/12F0N4P/UI-1.png" align="left"/>   
 
 Página de datos historicos    
-<img src="https://i.ibb.co/12F0N4P/UI-1.png" align="left"/>    
+<img src="https://i.ibb.co/85PX1x3/UI-2.png" align="left"/>  
+
+# Cluster de MongoDB cloud  
+<img src="https://i.ibb.co/vsGJpXS/DB-1.png" align="left"/>  
+
+Datos almancenados   
+<img src="https://i.ibb.co/THTLxYp/DB-2.png" align="left"/>
+
   
 
 
