@@ -10,7 +10,7 @@ Proceso de instalación.
 
 <ol>
 <li>En el CMD de windows, ingresar  
-  <code>pip install django</code>.</li>
+  <code>pip install django</code></li>
 <li>En el CMD de windows, ingresar  
   <code>pip install djongo</li>
 <li>En la carpeta monitor abrir CMD</li>
@@ -19,7 +19,7 @@ Proceso de instalación.
 </ol>
 
 De esta manera se tiene ejecutando el proyecto en la direccion IP y puerto especificados por el CMD.  
-El correcto funcionamiento implica tener el sistema de adquisicon de datos conectado correctamente.  
+El correcto funcionamiento implica tener el sistema de adquisición de datos conectado correctamente.  
 
 # Interfaces de usuario    
 Página principal    
@@ -35,6 +35,8 @@ Como los datos se leen cada segundo, podemos ver lecturas similares o iguales
 Datos almancenados   
 <img src="https://i.ibb.co/THTLxYp/DB-2.png" align="left"/>
 
-  
+Gráficos de datos
+<img src="https://i.ibb.co/8c6xQFf/Opera-Snapshot-2021-02-23-095353-charts-mongodb-com.png" align="left"/>
+
 
 
