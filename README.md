@@ -10,7 +10,7 @@ Proceso de instalación.
 <ol>
 <li>En el CMD de windows, ingresar  
   <code>pip install django</code>.</li>
-<li>>En el CMD de windows, ingresar  
+<li>En el CMD de windows, ingresar  
   <code>pip install djongo</li>
 <li>En la carpeta monitor abrir CMD</li>
 <li>Ingresar  
