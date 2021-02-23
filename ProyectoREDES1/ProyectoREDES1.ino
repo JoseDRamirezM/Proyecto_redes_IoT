@@ -1,14 +1,11 @@
-/* Arduino example code for DHT11, DHT22/AM2302 and DHT21/AM2301 temperature and humidity sensors. More info: www.makerguides.com */
-// Include the libraries:
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
-// Set DHT pin:
+// DHT pin:
 #define DHTPIN 2
-// Set DHT type, uncomment whatever type you're using!
-//#define DHTTYPE DHT11   // DHT 11 
+
 #define DHTTYPE DHT22   // DHT 22  (AM2302)
-//#define DHTTYPE DHT21   // DHT 21 (AM2301)
-// Initialize DHT sensor for normal 16mhz Arduino:
+
+// Inicializar:
 DHT dht = DHT(DHTPIN, DHTTYPE);
 
 int LDR_pin = A0;
@@ -18,49 +15,33 @@ void setup() {
 
   pinMode(LDR_pin, INPUT);
   pinMode(LED_pin, OUTPUT);
-  // Begin serial communication at a baud rate of 9600:
+  // Comunicacion serial a 9600:
   Serial.begin(9600);
-  // Setup sensor:
   dht.begin();
 }
 void loop() {
-  // Wait a few seconds between measurements:
-  
-
-  int light = analogRead(LDR_pin);
-  
-  // Reading temperature or humidity takes about 250 milliseconds!
-  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
-  // Read the humidity in %:
+ 
+  int luz = analogRead(LDR_pin);
+  // Leer la humedad en %:
   float h = dht.readHumidity();
-  // Read the temperature as Celsius:
+  // Leer la temperatura en Celsius:
   float t = dht.readTemperature();
-  // Read the temperature as Fahrenheit:
-  float f = dht.readTemperature(true);
-  // Check if any reads failed and exit early (to try again):
-  if (isnan(h) || isnan(t) || isnan(f)) {
-    Serial.println("Failed to read from DHT sensor!");
+  
+  // verificar si las medidas son correctas:
+  if (isnan(h) || isnan(t)) {
+    Serial.println("No ha sido posible leer datos!");
     return;
   }
-  // Compute heat index in Fahrenheit (default):
-  float hif = dht.computeHeatIndex(f, h);
-  // Compute heat index in Celsius:
-  float hic = dht.computeHeatIndex(t, h, false);
-  //Serial.print("Humidity: ");
-  //Serial.print(h);
-  //Serial.print(" %,");
-  //Serial.print(",");
-  //Serial.print("Temperature: ,");
-  //Serial.print(t);
-
-  if (light > 500) {
-    digitalWrite(LED_pin, HIGH); // sets the digital pin 13 on
+  
+  // Se define en que rango es necesaria la luz LED
+  if (luz > 500) {
+    digitalWrite(LED_pin, HIGH); // pin 13 HIGH
   }
   else{
-    digitalWrite(LED_pin, LOW); // sets the digital pin 13 on
+    digitalWrite(LED_pin, LOW); // pin 13 LOW
   }
   
-  
+  // Enviamos datos a serial
   Serial.print(t);
   Serial.print(',');
   Serial.print(h);
@@ -68,19 +49,5 @@ void loop() {
   Serial.println(light);
  
   delay(1000);
-  //Serial.print(" \xC2\xB0,");
-  //Serial.print("C | ");
-  //Serial.print("Light,");
-  //Serial.print(light);
-  //Serial.println("");
-//  Serial.print(f);
-//  Serial.print(" \xC2\xB0");
-//  Serial.print("F ");
-//  Serial.print("Heat index: ");
-//  Serial.print(hic);
-//  Serial.print(" \xC2\xB0");
-//  Serial.print("C | ");
-//  Serial.print(hif);
-//  Serial.print(" \xC2\xB0");
-//  Serial.println("F");
+
 }
