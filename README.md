@@ -4,6 +4,7 @@ José David Ramírez Maldonado 20181020047
 Bogotá, Colombia
 
 Este proyecto utiliza el framework Django para desarrollo web y la tecnologia arduino.  
+Por tanto un prerequisito es la instalacion de Python (version 2.7 o posteriores).
 
 Proceso de instalación.  
 
