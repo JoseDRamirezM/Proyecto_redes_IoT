@@ -3,7 +3,10 @@ Universidad Distrital Francisco José de Caldas
 José David Ramírez Maldonado 20181020047  
 Bogotá, Colombia
 
-Este proyecto utiliza el framework Django para desarrollo web y la tecnologia arduino.  
+<hr>
+
+Este proyecto utiliza el framework Django para desarrollo web y la tecnologia arduino.
+Junto con un cluster de MongoDB Cloud con una comunicación segura utilizando el protocolo SSL.
 Por tanto un prerequisito es la instalacion de Python (version 2.7 o posteriores).
 
 Proceso de instalación.  
@@ -23,6 +26,15 @@ El correcto funcionamiento implica tener el sistema de adquisición de datos con
 Página de inicio de sesión
 
 <img src="https://i.ibb.co/XxSfMK3/login.png" align="left"/>
+
+Aquí el usuario deberá ingresar las siguientes credenciales.
+
+<ul>
+  <li>Usuario: admin</li>
+  <li>Constraseña: inverdadero4dmin</li>
+</ul>
+
+Una vez se inicia sesión se tiene acceso a los datos en vivo y al histórico.
 
 # Interfaces de usuario    
 Página principal    
