@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 from urllib.parse import quote_plus
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'Invernadero',
+    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'monitor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,22 +84,23 @@ WSGI_APPLICATION = 'monitor.wsgi.application'
 # }
 
 # DATABASES = {
-        
+
 #     'default': {
 #         'ENGINE': 'djongo',
 #         'NAME': 'monitor',
 #         'CLIENT': {
 #             'host': "mongodb+srv://Invernadero:" + quote_plus('31-01-2021') + "@cluster0.o7gua.mongodb.net/monitor?retryWrites=true&w=majority"
-#         },   
+#         },
 #     }
 # }
 DATABASES = {
-        'default': {
+    'default': {
         'ENGINE': 'djongo',
         'NAME': 'monitor',
-        'HOST': 'mongodb+srv://Invernadero:31-01-2021@cluster0.o7gua.mongodb.net/monitor?retryWrites=true&w=majority',
+        'HOST': 'mongodb+srv://Invernadero:31-01-2021@cluster0.o7gua.mongodb.net/monitor?ssl=true&retryWrites=true&w=majority',
         'USER': 'Invernadero',
         'PASSWORD': '31-01-2021',
+
     }
 }
 
@@ -111,13 +113,22 @@ DATABASES = {
 #            "username": 'Invernadero',
 #            "password": '31-01-2021',
 #            "authMechanism": "SCRAM-SHA-1",
-#         }, 
+#         },
 #     }
 # }
+
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+]
 
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -153,3 +164,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/invernadero'

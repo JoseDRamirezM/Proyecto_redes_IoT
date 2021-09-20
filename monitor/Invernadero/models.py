@@ -1,6 +1,9 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 # Create your models here.
+
+
 class Lectura(models.Model):
     temperatura = models.CharField(max_length=10)
     humedad = models.CharField(max_length=10)

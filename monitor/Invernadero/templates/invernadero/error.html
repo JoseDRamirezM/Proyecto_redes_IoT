@@ -1,5 +1,9 @@
 {% extends "invernadero/layout.html" %}
 
 {% block message %}
-    <h2>{{mensaje}}</h2>
+    <div>
+        <h2>{{mensaje}}</h2>
+        <hr>
+        <a href="{% url  'invernadero:historico' %}">Ver datos historicos</a>
+    </div>
 {% endblock %}

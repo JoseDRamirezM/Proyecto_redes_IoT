@@ -2,7 +2,7 @@
 
 
 {% block update %}
-    <meta http-equiv='refresh' content='0.5'>
+    <meta http-equiv='refresh' content='1'>
 {% endblock %}
 
 {% block title %}
@@ -13,10 +13,6 @@
     <div>
         <h2>Monitor de invernadero</h2>
         <p style="text-align: center;">{{fecha}}</p>
-    </div>
-
-    <div>
-        <a href="{% url 'invernadero:historico'%}">Ver datos historicos</a>
     </div>
  
 {% endblock %}
