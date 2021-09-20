@@ -20,6 +20,9 @@ Proceso de instalación.
     <code>pip install djongo</code>
   </li>
   <li>En la carpeta monitor abrir CMD</li>
+  <li>Para instalar Argon2 de forma local ingresar 
+    <code>python -m pip install argon2-cffi</code>
+  </li>
   <li>Ingresar 
     <code>python manage.py runserver</code>
   </li>
