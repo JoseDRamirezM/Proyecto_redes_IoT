@@ -75,10 +75,14 @@ Datos almancenados
 
 <img src="https://i.ibb.co/THTLxYp/DB-2.png" align="left"/>
 
+
 Gráficos de datos
 
 
 <img src="https://i.ibb.co/8c6xQFf/Opera-Snapshot-2021-02-23-095353-charts-mongodb-com.png" align="left"/>
+
+
+Se puede apreciar en las gráficas los parámetros ambientales constantes del invernadero, los datos iniciales son de calibración por tanto son valores atípicos.
 
 <hr>
 
