@@ -7,8 +7,8 @@ Bogotá, Colombia
 <hr>
 
 Este proyecto utiliza el framework Django para desarrollo web y la tecnologia arduino.
-Junto con un cluster de MongoDB Cloud con una comunicación segura utilizando el protocolo SSL.
-Por tanto un prerequisito es la instalacion de Python (version 2.7 o posteriores).
+Junto con un cluster de MongoDB Cloud con una comunicación segura utilizando el protocolo SSL.  
+Se necesita Python (version 2.7 o posteriores).  
 
 Proceso de instalación.  
 
