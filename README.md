@@ -12,10 +12,10 @@ Por tanto un prerequisito es la instalacion de Python (version 2.7 o posteriores
 Proceso de instalación.  
 
 <ol>
-<li>En el CMD de windows, ingresar <code>pip install django</code></li>
-<li>En el CMD de windows, ingresar <code>pip install djongo</li>
-<li>En la carpeta monitor abrir CMD</li>
-<li>Ingresar <code>python manage.py runserver</code></li>
+  <li>En el CMD de windows, ingresar <code>pip install django</code></li>
+  <li>En el CMD de windows, ingresar <code>pip install djongo</li>
+  <li>En la carpeta monitor abrir CMD</li>
+  <li>Ingresar <code>python manage.py runserver</code></li>
 </ol>
 
 De esta manera se tiene ejecutando el proyecto en la direccion IP y puerto especificados por el CMD.  
