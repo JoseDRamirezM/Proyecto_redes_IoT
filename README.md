@@ -25,7 +25,9 @@ El correcto funcionamiento implica tener el sistema de adquisición de datos con
 
 Página de inicio de sesión
 
+
 <img src="https://i.ibb.co/XxSfMK3/login.png" align="left"/>
+
 
 Aquí el usuario deberá ingresar las siguientes credenciales.
 
@@ -36,11 +38,17 @@ Aquí el usuario deberá ingresar las siguientes credenciales.
 
 Una vez se inicia sesión se tiene acceso a los datos en vivo y al histórico.
 
+<hr>
+
 # Interfaces de usuario    
 Página principal    
+
+
 <img src="https://i.ibb.co/12F0N4P/UI-1.png" align="left"/>   
 
-Página de datos historicos    
+Página de datos historicos   
+
+
 <img src="https://i.ibb.co/85PX1x3/UI-2.png" align="left"/>  
 
 Como los datos se leen cada segundo, podemos ver lecturas similares o iguales  
@@ -51,10 +59,14 @@ Como los datos se leen cada segundo, podemos ver lecturas similares o iguales
 <img src="https://i.ibb.co/vsGJpXS/DB-1.png" align="left"/>  
 
 Datos almancenados   
+
+
 <img src="https://i.ibb.co/THTLxYp/DB-2.png" align="left"/>
 
 Gráficos de datos
+
+
 <img src="https://i.ibb.co/8c6xQFf/Opera-Snapshot-2021-02-23-095353-charts-mongodb-com.png" align="left"/>
 
-
+<hr>
 
