@@ -1,4 +1,5 @@
 # Proyecto monitor invernaderos IoT
+
 Universidad Distrital Francisco José de Caldas  
 José David Ramírez Maldonado 20181020047  
 Bogotá, Colombia
@@ -47,13 +48,17 @@ Una vez se inicia sesión se tiene acceso a los datos en vivo y al histórico.
 <hr>
 
 # Interfaces de usuario    
-Página principal    
+
+Página principal
+
+Aquí se muestran los datos en vivo recogidos por los sensores
 
 
 <img src="https://i.ibb.co/12F0N4P/UI-1.png" align="left"/>   
 
 Página de datos historicos   
 
+Aquí se solicitan los datos de la DB y se muestran en forma de dataset.
 
 <img src="https://i.ibb.co/85PX1x3/UI-2.png" align="left"/>  
 
@@ -62,6 +67,7 @@ Como los datos se leen cada segundo, podemos ver lecturas similares o iguales
 <hr>
 
 # Cluster de MongoDB cloud  
+
 <img src="https://i.ibb.co/vsGJpXS/DB-1.png" align="left"/>  
 
 Datos almancenados   
