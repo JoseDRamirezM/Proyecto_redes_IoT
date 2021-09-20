@@ -28,6 +28,8 @@ Proceso de instalación.
 De esta manera se tiene ejecutando el proyecto en la direccion IP y puerto especificados por el CMD.  
 El correcto funcionamiento implica tener el sistema de adquisición de datos conectado correctamente.  
 
+<hr>
+
 # Control de acceso a los datos
 
 Página de inicio de sesión
@@ -75,6 +77,8 @@ La sesión se mantiene iniciada hasta que el usuario la cierre con el link de la
 
 
 Así que para evitar accesos no autorizados se debe cerrar la sesión cuando se crea necesario.  
+
+<hr>
 
 # Cluster de MongoDB cloud  
 
