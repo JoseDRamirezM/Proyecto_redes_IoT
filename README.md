@@ -43,7 +43,7 @@ Aquí el usuario deberá ingresar las siguientes credenciales.
   <li>Constraseña: inverdadero4dmin</li>
 </ul>
 
-Una vez se inicia sesión se tiene acceso a los datos en vivo y al histórico.
+Una vez se inicia sesión se tiene acceso a los datos en vivo y al histórico, de otro modo no se tiene acceso a estas vistas.  
 
 <hr>
 
