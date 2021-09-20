@@ -66,6 +66,16 @@ Como los datos se leen cada segundo, podemos ver lecturas similares o iguales.
 
 <hr>
 
+# Recomendaciones de seguridad
+
+La sesión se mantiene iniciada hasta que el usuario la cierre con el link de la barra de navegación.  
+
+
+<img src="https://i.ibb.co/9ZMbDJp/navbar.png" aling="left" />
+
+
+Así que para evitar accesos no autorizados se debe cerrar la sesión cuando se crea necesario.  
+
 # Cluster de MongoDB cloud  
 
 <img src="https://i.ibb.co/vsGJpXS/DB-1.png" align="left"/>  
