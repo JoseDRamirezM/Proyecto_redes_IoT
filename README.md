@@ -73,7 +73,7 @@ Como los datos se leen cada segundo, podemos ver lecturas similares o iguales.
 
 # Recomendaciones de seguridad
 
-La sesión se mantiene iniciada hasta que el usuario la cierre con el link de la barra de navegación.  
+La sesión se mantiene hasta que el usuario la cierre con el link de la barra de navegación.  
 
 
 <img src="https://i.ibb.co/9ZMbDJp/navbar.png" aling="left" />
